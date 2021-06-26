@@ -118,13 +118,13 @@ const PublishLog = (props) => {
       search: false
     },
     {
-      title: '发布名称',
+      title: '发布名称（备注）',
       dataIndex: 'publishLogName',
       key: 'publishLogName',
       search: false
     },
     {
-      title: '项目来源',
+      title: '项目类别',
       dataIndex: 'projectSourceType',
       search: false,
       valueEnum: {

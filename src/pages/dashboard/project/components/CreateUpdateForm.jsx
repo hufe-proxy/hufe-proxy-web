@@ -71,11 +71,11 @@ const UpdateForm = (props) => {
 
         <Form.Item
           name="sourceType"
-          label="项目类型"
+          label="项目类别"
           rules={[
             {
               required: true,
-              message: '请选择项目类型',
+              message: '请选择项目类别',
             },
           ]}
         >
@@ -88,7 +88,7 @@ const UpdateForm = (props) => {
                 label: '住院', value: ProjectSourceType.Inpatient
               }]
             }
-            placeholder="请选择项目类型"
+            placeholder="请选择项目类别"
           />
         </Form.Item>
 

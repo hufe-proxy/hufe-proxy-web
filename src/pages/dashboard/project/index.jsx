@@ -98,13 +98,13 @@ const Project = () => {
       width: 48,
     },
     {
-      title: '名称',
+      title: '项目名称',
       dataIndex: 'name',
       key: 'name',
       copyable: true,
     },
     {
-      title: '来源',
+      title: '项目类别',
       dataIndex: 'sourceType',
       search: false,
       valueEnum: {
@@ -119,7 +119,7 @@ const Project = () => {
       hideInForm: true,
     },
     {
-      title: '操作',
+      title: '操作（谨慎操作）',
       valueType: 'option',
       width: 150,
       render: (_, record) => (

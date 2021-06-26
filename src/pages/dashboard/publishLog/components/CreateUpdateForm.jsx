@@ -69,30 +69,30 @@ const UpdateForm = (props) => {
       >
         <Form.Item
           name="name"
-          label="名称"
+          label="发布备注"
           rules={[
             {
               required: true,
-              message: '请输入发布名称',
+              message: '请输入发布名称（备注）',
             },
           ]}
         >
-          <Input placeholder="请输入发布名称" />
+          <Input placeholder="请输入发布名称（备注）" />
         </Form.Item>
 
         <Form.Item
           name="projectId"
-          label="项目"
+          label="项目类别"
           rules={[
             {
               required: true,
-              message: '请选择项目',
+              message: '请选择项目类别',
             },
           ]}
         >
           <Select
             options={props.projectOptions}
-            placeholder="请选择发布类型"
+            placeholder="请选择项目类别"
           />
         </Form.Item>
 

@@ -12,7 +12,7 @@ const UserModel = {
         return
       }
       const info = JSON.parse(infoStr)
-      const response = { name: info.name ? `${info.name}（${info.kindergartenName}）` : '超级管理员' };
+      const response = { name: info.name ? `${info.name}（${info.kindergartenName}）` : 'winning' };
       yield put({
         type: 'saveCurrentUser',
         payload: response,

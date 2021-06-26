@@ -4,8 +4,8 @@ import defaultSettings from './defaultSettings';
 import proxy from './proxy';
 const { REACT_APP_ENV } = process.env;
 export default defineConfig({
-  base: '/canary-admin/',
-  publicPath: '/canary-admin/',
+  base: '/winex-proxy-web/',
+  publicPath: '/winex-proxy-web/',
   hash: true,
   antd: {},
   dva: {

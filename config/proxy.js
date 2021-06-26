@@ -7,11 +7,18 @@
  */
 export default {
   dev: {
-    '/canary-server': {
+    '/winex-proxy-server': {
       target: 'http://localhost:18080',
       changeOrigin: true,
       pathRewrite: {
-        '^/canary-server': '/',
+        '^/winex-proxy-server': '/',
+      },
+    },
+    '/winex-proxy-docs': {
+      target: 'http://172.16.6.214',
+      changeOrigin: true,
+      pathRewrite: {
+        '^/winex-proxy-server': '/winex-proxy-server',
       },
     },
   },

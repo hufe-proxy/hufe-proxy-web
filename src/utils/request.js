@@ -31,7 +31,7 @@ const errorHandler = (error) => {
  */
 
 const request = extend({
-  prefix: '/canary-server',
+  prefix: '/winex-proxy-server',
   // headers: { 'Content-Type': 'application/json' },
   errorHandler,
   credentials: 'include', // 默认请求是否带上cookie

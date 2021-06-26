@@ -2,7 +2,7 @@
 import md5 from 'blueimp-md5';
 
 export default {
-  'POST /canary-server/api/common/v1/login': (req, res) => {
+  'POST /winex-proxy-server/api/common/v1/login': (req, res) => {
     const { password, account } = req.body;
 
     if (password === md5('123456') && account === 'admin') {

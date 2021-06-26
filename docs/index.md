@@ -11,13 +11,10 @@
 
 #### 1.安装并启动whistle
 
-`npm install -g whistle`
+`npm install -g whistle` & `w2 start -p 18899`（端口自选）
 
-#### 2.启动whistle
-`w2 start -p 18899`（端口自选）
-
-#### 3.安装并新增SwitchyOmega情景模式
-> 首次安装可参考`资料下载`章节
+#### 2.安装并新增SwitchyOmega情景模式
+> 首次安装可参考[资料下载](#switchyomega)章节
 
 ![新增情景模式](/switchOmega.png)
 
@@ -26,14 +23,14 @@
 <br>
 
 #### 1.注册项目
-> 仅第一次需要，项目名称为vue.config.js中的publicPath的二级目录。
+> 仅第一次需要，项目名称为`vue.config.js`中的`publicPath`的二级目录（<span style="color:red;">不要加 / </span>）。
 
 ![新建项目1](/createProject1.png)
 
 ![新建项目2](/createProject2.png)
 
 #### 2.上传打包后项目包
-> 打包后的dist文件夹直接压缩成zip格式后上传
+> 打包后的`dist`文件夹直接压缩成<span style="color:red;">zip</span>格式后上传
 
 ![上传打包后项目包1](/createPublishLog1.png)
 
@@ -46,23 +43,14 @@
 
 ![粘贴至whistle](/pasteScript.png)
 
-#### 4.启用SwitchyOmega
+#### 4.开启SwitchyOmega
+> 不使用时建议关闭
 
 ![启用SwitchyOmega](/startProxy.png)
 
 #### 5.刷新页面
 
 ![效果](/result.png)
-
-
-## 资料下载
-
-### SwitchyOmega
-
-[方式一：chrome网上商店](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
-
-[方式二：本地安装下载地址](https://github.com/FelisCatus/SwitchyOmega/releases/download/v2.5.20/SwitchyOmega_Chromium.crx)
-
 
 
 ## 代码仓库
@@ -78,3 +66,11 @@
 ### whistle
 
 [https://github.com/avwo/whistle](https://github.com/avwo/whistle)
+
+## 资料下载
+
+### SwitchyOmega
+
+[方式一：chrome网上商店](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
+
+[方式二：本地安装下载地址](https://github.com/FelisCatus/SwitchyOmega/releases/download/v2.5.20/SwitchyOmega_Chromium.crx)

@@ -9,6 +9,7 @@ export default {
   'menu.register.result': '注册结果',
   'menu.dashboard': '总览',
   'menu.dashboard.publish_log': '发布管理',
+  'menu.dashboard.mock_data': 'mock数据',
   'menu.dashboard.project': '项目管理',
   'menu.dashboard.instruction': '使用指南'
 };

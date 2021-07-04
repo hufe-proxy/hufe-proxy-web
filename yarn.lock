@@ -10531,6 +10531,18 @@ moment@^2.24.0, moment@^2.25.3, moment@^2.27.0, moment@^2.29.1:
   resolved "https://r.cnpmjs.org/moment/download/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha1-sr52n6MZQL6e7qZGnAdeNQBvo9M=
 
+monaco-editor-webpack-plugin@^4.0.0:
+  version "4.0.0"
+  resolved "https://r.cnpmjs.org/monaco-editor-webpack-plugin/download/monaco-editor-webpack-plugin-4.0.0.tgz#95be3f48f4220999b909266a9997727f0deab947"
+  integrity sha1-lb4/SPQiCZm5CSZqmZdyfw3quUc=
+  dependencies:
+    loader-utils "^2.0.0"
+
+monaco-editor@^0.25.2:
+  version "0.25.2"
+  resolved "https://r.cnpmjs.org/monaco-editor/download/monaco-editor-0.25.2.tgz#119e2b15bbd968a1a99c03cac9c329316d7c37e9"
+  integrity sha1-EZ4rFbvZaKGpnAPKycMpMW18N+k=
+
 moo@^0.5.0:
   version "0.5.1"
   resolved "https://r.cnpmjs.org/moo/download/moo-0.5.1.tgz#7aae7f384b9b09f620b6abf6f74ebbcd1b65dbc4"

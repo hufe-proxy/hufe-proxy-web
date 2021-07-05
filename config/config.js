@@ -3,6 +3,8 @@ import { defineConfig } from 'umi';
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
 const { REACT_APP_ENV } = process.env;
+import MonacoWebpackPlugin from 'monaco-editor-webpack-plugin';
+
 export default defineConfig({
   base: '/winex-proxy-web/',
   publicPath: '/winex-proxy-web/',
@@ -77,6 +79,12 @@ export default defineConfig({
                   component: './dashboard/publishLog',
                 },
                 {
+                  name: 'mock_log',
+                  icon: 'code',
+                  path: '/dashboard/mock_log',
+                  component: './dashboard/mockLog',
+                },
+                {
                   name: 'project',
                   icon: 'database',
                   path: '/dashboard/project',
@@ -110,4 +118,7 @@ export default defineConfig({
   },
   exportStatic: {},
   esbuild: {},
+  chainWebpack: function (config) {
+    config.plugin("MonacoWebpackPlugin").use(MonacoWebpackPlugin)
+  }
 });

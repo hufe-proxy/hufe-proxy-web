@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
+import ClipboardJS from 'clipboard'
 import { PageContainer } from '@ant-design/pro-layout';
 import { PlusOutlined } from '@ant-design/icons';
 import { Divider, Popconfirm, Button, message } from 'antd';
@@ -13,6 +14,11 @@ const MockLog = () => {
   const [formItemValues, setFormItemValues] = useState({});
   const [createModalVisible, setCreateModalVisible] = useState(false);
   const [updateModalVisible, setUpdateModalVisible] = useState(false);
+
+  useEffect(() => {
+    // eslint-disable-next-line no-new
+    new ClipboardJS('.copy')
+  }, [])
 
 
   // 处理form请求

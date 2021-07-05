@@ -1,13 +1,13 @@
 import React, { useRef, useState } from 'react';
 import { PageContainer } from '@ant-design/pro-layout';
 import { PlusOutlined } from '@ant-design/icons';
-import { Divider, Popconfirm, Button } from 'antd';
+import { Divider, Popconfirm, Button, message } from 'antd';
 import ProTable from '@ant-design/pro-table';
 import { connect } from 'umi';
 import CreateUpdateForm from './components/CreateUpdateForm'
 import { apiGetMockList, apiAddMock, apiDeleteMock, apiUpdateMock } from './service';
 
-const MockData = () => {
+const MockLog = () => {
   const actionRef = useRef();
 
   const [formItemValues, setFormItemValues] = useState({});
@@ -20,7 +20,7 @@ const MockData = () => {
     const res = await apiGetMockList({
       pageSize: params.pageSize,
       pageNo: params.current - 1,
-      keyword: params.name || null,
+      keyword: params.address || null,
     });
     if (res && res.success) {
       const { data } = res;
@@ -98,15 +98,14 @@ const MockData = () => {
     },
     {
       title: '代理地址',
-      dataIndex: 'name',
-      key: 'name',
+      dataIndex: 'address',
+      key: 'address',
       copyable: true,
     },
     {
       title: '备注',
       dataIndex: 'remark',
       key: 'remark',
-      copyable: true,
       search: false,
     },
     {
@@ -118,9 +117,19 @@ const MockData = () => {
     {
       title: '操作',
       valueType: 'option',
-      width: 150,
+      width: 200,
       render: (_, record) => (
         <>
+          <a
+            className="copy"
+            data-clipboard-text={record.proxyScript}
+            onClick={
+              () => message.success('复制成功')
+            }
+          >
+            复制代理脚本
+          </a>
+          <Divider type="vertical" />
           <a
             onClick={() => {
               setUpdateModalVisible(true);
@@ -131,7 +140,7 @@ const MockData = () => {
           </a>
           <Divider type="vertical" />
           <Popconfirm
-            title={`确定删除${record.name}？`}
+            title={`确定删除${record.address}？`}
             okText="确定"
             cancelText="取消"
             onConfirm={() => handleDelete(record.id)}
@@ -188,6 +197,6 @@ const MockData = () => {
   );
 };
 
-export default connect(({ mockData }) => ({
-  mockData,
-}))(MockData);
+export default connect(({ mockLog }) => ({
+  mockLog,
+}))(MockLog);

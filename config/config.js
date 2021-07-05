@@ -79,10 +79,10 @@ export default defineConfig({
                   component: './dashboard/publishLog',
                 },
                 {
-                  name: 'mock_data',
+                  name: 'mock_log',
                   icon: 'code',
-                  path: '/dashboard/mock_data',
-                  component: './dashboard/mockData',
+                  path: '/dashboard/mock_log',
+                  component: './dashboard/mockLog',
                 },
                 {
                   name: 'project',

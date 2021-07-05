@@ -1,5 +1,5 @@
 const Model = {
-  namespace: 'mockData',
+  namespace: 'mockLog',
   state: {},
   effects: {},
   reducers: {},

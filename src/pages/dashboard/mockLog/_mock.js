@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 export default {
-  'POST  /winex-proxy-server/api/project/v1/list/by_search': (_, res) => {
+  'POST  /winex-proxy-server/api/mock_log/v1/list/by_search': (_, res) => {
     res.send({
       appid: 'aiyi_local',
       errorDetail: null,

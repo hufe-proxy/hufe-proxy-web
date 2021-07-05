@@ -17,7 +17,7 @@ const UpdateForm = (props) => {
   const { modalVisible, onCancel, onSubmit: handleSubmit, values } = props;
 
   const [formVals, setFormVals] = useState({
-    name: values ? values.name : '',
+    address: values ? values.address : '',
     remark: values ? values.remark : '',
     content: values ? values.content : '',
   });
@@ -68,7 +68,7 @@ const UpdateForm = (props) => {
         }}
       >
         <Form.Item
-          name="name"
+          name="address"
           label="代理地址"
           rules={[
             {

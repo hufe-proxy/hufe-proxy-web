@@ -5,10 +5,10 @@ import style from './form.less';
 
 const formLayout = {
   labelCol: {
-    span: 5,
+    span: 3,
   },
   wrapperCol: {
-    span: 18,
+    span: 20,
     offset: 1,
   },
 };
@@ -58,7 +58,7 @@ const UpdateForm = (props) => {
       visible={modalVisible}
       onCancel={onCancel}
       footer={null}
-      width={600}
+      width={750}
     >
       <Form
         {...formLayout}

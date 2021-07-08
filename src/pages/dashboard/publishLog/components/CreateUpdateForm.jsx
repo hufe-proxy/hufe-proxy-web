@@ -129,9 +129,9 @@ const UpdateForm = (props) => {
                 message.error('请上传zip压缩包');
                 return Upload.LIST_IGNORE;
               }
-              const isSizeOut = file.size / 1024 / 1024 < 5;
+              const isSizeOut = file.size / 1024 / 1024 < 10;
               if (!isSizeOut) {
-                message.error('图片大小限制5M以内');
+                message.error('图片大小限制10M以内');
                 return Upload.LIST_IGNORE;
               }
               return false;

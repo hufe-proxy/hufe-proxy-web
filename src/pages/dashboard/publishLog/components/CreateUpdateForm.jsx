@@ -105,7 +105,7 @@ const UpdateForm = (props) => {
             }
             return e && e.fileList;
           }}
-          extra="限制5MB以内zip项目包"
+          extra="限制10MB以内zip项目包"
           label="项目压缩包"
           rules={[
             {

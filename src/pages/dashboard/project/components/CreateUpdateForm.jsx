@@ -86,6 +86,9 @@ const UpdateForm = (props) => {
               },
               {
                 label: '住院', value: ProjectSourceType.Inpatient
+              },
+              {
+                label: '其他', value: ProjectSourceType.Other
               }]
             }
             placeholder="请选择项目类别"

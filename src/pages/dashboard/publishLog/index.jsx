@@ -130,6 +130,7 @@ const PublishLog = (props) => {
       valueEnum: {
         [ProjectSourceType.Outpatient]: { text: "门诊" },
         [ProjectSourceType.Inpatient]: { text: "住院" },
+        [ProjectSourceType.Other]: { text: "其他" },
       },
     },
     {

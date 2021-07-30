@@ -59,9 +59,28 @@
 
 ![效果](/result.png)
 
+### 使用（CLI工具）
+> 一条命令完成项目打包、压缩、上传、代理工具检测&开启、代理脚本注入
+
+#### 1.安装
+`npm i -g whistle @winex-proxy-cli/cli`
+
+#### 2.使用
+
+版本：`wp -v`
+
+帮助：`wp -h`
+
+打包项目并上传：`wp deploy -m 备注`
+
+跳过打包直接上传：`wp deploy -s build -m 备注`
+
 
 ## 代码仓库
 
+### CLI
+
+[https://github.com/winex-proxy/winex-proxy-cli](https://github.com/winex-proxy/winex-proxy-cli)
 ### 后端
 
 [https://github.com/winex-proxy/winex-proxy-server](https://github.com/winex-proxy/winex-proxy-server)

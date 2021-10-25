@@ -1,4 +1,4 @@
-# winex-proxy-web
+# hufe-proxy-web
 
 ## Environment Prepare
 
